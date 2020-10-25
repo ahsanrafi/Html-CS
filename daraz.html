@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body{
+    margin: auto;
+}
+/*.headerfix{
+    position: fixed;
+}
+.logoSer{
+    background-color: white;
+}*/
+.header{
+    display: flex;
+    background-color: rgba(179, 175, 175, 0.226);
+    height: 25px;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+.headerLink1{
+    color: rgb(243, 111, 54);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin-left: 365px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.headerLink1:hover{
+    text-decoration: underline;
+}
+.headerLink2{
+    color: rgba(0, 0, 0, 0.603);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin-top: -6px;
+    font-weight: bold;
+    margin-right: -3px;
+    cursor: pointer;
+}
+.headerLink2:hover{
+    color: rgb(243, 111, 54);
+    text-decoration: underline;
+}
+.headerLink3{
+    color: rgba(0, 0, 0, 0.603);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin-top: -6px;
+    font-weight: bold;
+    margin-right: -4px;
+    cursor: pointer;
+}
+.headerLink3:hover{
+    color: rgb(243, 111, 54);
+    text-decoration: underline;
+}
+.headerLink4{
+    color: rgba(0, 0, 0, 0.603);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin-top: -6px;
+    font-weight: bold;
+    margin-right: -5px;
+    cursor: pointer;
+}
+.headerLink4:hover{
+    color: rgb(243, 111, 54);
+    text-decoration: underline;
+}
+.headerLink5{
+    color: rgba(0, 0, 0, 0.603);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin-top: -6px;
+    font-weight: bold;
+    margin-right: -6px;
+    cursor: pointer;
+}
+.headerLink5:hover{
+    color: rgb(243, 111, 54);
+    text-decoration: underline;
+}
+.headerLink6{
+    color: rgba(0, 0, 0, 0.603);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin-top: -30px;
+    font-weight: bold;
+    margin-left: 1097px;
+    cursor: pointer;
+}
+.headerLink6:hover{
+    color: rgb(243, 111, 54);
+    text-decoration: underline;
+}
+.headerLink7{
+    color: rgba(0, 0, 0, 0.603);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    margin-top: -23px;
+    font-weight: bold;
+    margin-left: 1165px;
+    cursor: pointer;
+}
+.headerLink7:hover{
+    color: rgb(243, 111, 54);
+    text-decoration: underline;
+}
+.logo{
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    background-color: #F5F5F5;
+    height: 45px;
+    width: 688px;
+    margin-left: 282px;
+    margin-top: -47px;
+}
+.searchtxt{
+    color: #A69E9E;
+    font-family: "Roboto-Regular", Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.searchimg{
+    background-color: #F57224;
+    height: 45px;
+    width: 45px;
+    margin-left: 522px;
+}
+.cart{
+    margin-left: 995px;
+    margin-top: -37px;
+}
+.downloaddaraz{
+    margin-left: 1075px;
+    margin-top: -52px;
+}
+.body1{
+    background-color: #F5F5F5;
+}
+.bimg1{
+    background-image: url("C:/Users/Muhammad Maaz/Desktop/Aptech/Daraz/Images/DM.jpg");
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.bimg1txt{
+    font-family: 'Roboto', sans-serif;
+    Font-size: 18px;
+    Line-height: 40px;
+    margin-left: 45px;
+}
+.bimg2{
+    background-image: url("C:/Users/Muhammad Maaz/Desktop/Aptech/Daraz/Images/mart.jpg");
+    height: 40px;
+    width: 40px;
+    margin-top: -42px;
+    margin-left: 320px;
+}
+.bimg2txt{
+    font-family: 'Roboto', sans-serif;
+    Font-size: 18px;
+    Line-height: 40px;
+    margin-left: 45px;
+}
+.bimg3{
+    background-image: url("C:/Users/Muhammad Maaz/Desktop/Aptech/Daraz/Images/fashion.jpg");
+    height: 40px;
+    width: 40px;
+    margin-top: -42px;
+    margin-left: 530px;
+}
+.bimg3txt{
+    width: 170px;
+    font-family: 'Roboto', sans-serif;
+    Font-size: 18px;
+    margin-left: 45px;
+}
+.bimg4{
+    background-image: url("C:/Users/Muhammad Maaz/Desktop/Aptech/Daraz/Images/GC.jpg");
+    height: 40px;
+    width: 40px;
+    margin-top: -42px;
+    margin-left: 800px;
+}
+.bimg4txt{
+    width: 170px;
+    font-family: 'Roboto', sans-serif;
+    Font-size: 18px;
+    margin-left: 45px;
+}
+.bimg5{
+    background-image: url("C:/Users/Muhammad Maaz/Desktop/Aptech/Daraz/Images/DS.jpg");
+    height: 40px;
+    width: 40px;
+    margin-top: -52px;
+    margin-left: 1030px;
+}
+.bimg5txt{
+    width: 170px;
+    font-family: 'Roboto', sans-serif;
+    Font-size: 18px;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.flashsale{
+    color: rgb(66, 66, 66);
+    font-family:'Roboto';
+    font-size: 22px;
+    margin-left: 80px;
+    margin-top: 35px;
+}
+.onsale{
+    color: rgb(243, 111, 54);
+    font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.endingin{
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    Font-size: 14px;
+    margin-left: 245px;
+    margin-top: -13px;
+}
+.timerimg{
+    margin-left: 315px;
+    margin-top: -30px;
+}
+p.solid {
+    color: rgb(243, 111, 54);
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+    Font-size: 14px;
+    border: solid 2px;
+    width: 100px;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: 1150px;
+    margin-top: -40px;
+    padding: 10px;
+}
+.line{
+    width: 1220px;
+    margin-left: 70px;
+    margin-top: 20px;
+    opacity: 0.3;
+}
+.onsale1{
+    margin-left: -10px;
+}
+.onsale2{
+    margin-left: 200px;
+    margin-top: -300px;
+}
+.onsale3{
+    margin-left: 400px;
+    margin-top: -300px;
+}
+.onsale4{
+    margin-left: 600px;
+    margin-top: -310px;
+}
+.onsale5{
+    margin-left: 800px;
+    margin-top: -330px;
+}
+.onsale6{
+    margin-left: 1000px;
+    margin-top: -320px;
+}
+.collection{
+    color: rgb(66, 66, 66);
+    font-family:'Roboto';
+    font-size: 22px;
+    margin-left: 90px;
+    margin-top: 5px;
+}
+.shopmore{
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #1A9CB7;
+    font-weight: bold;
+    margin-left: 1180px;
+}
+.shopmore1{
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #1A9CB7;
+    margin-left: 85px;
+    margin-top: -25px;
+}
+.collectionimg1{
+    margin-left: 80px; 
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    width: 300px;
+}
+.collectionimg2{
+    margin-left: 382px;
+    margin-top: -151px; 
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    width: 300px;
+}
+.collectionimg3{
+    margin-left: 684px;
+    margin-top: -149px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    width: 300px;
+}
+.collectionimg4{
+    margin-left: 986px;
+    margin-top: -150px; 
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 300px;
+}
+.collectionimg5{
+    margin-left: 80px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    width: 300px;
+}
+.collectionimg6{
+    margin-left: 382px;
+    margin-top: -148px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    width: 300px;
+}
+.collectionimg7{
+    margin-left: 684px;
+    margin-top: -148px;
+    border: solid 1px rgba(179, 175, 175, 0.733);
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    width: 300px;
+}
+.collectionimg8{
+    margin-left: 986px;
+    margin-top: -150px; 
+    width: 300px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping in Pakistan: Fashion, Electronics & Books - Daraz.pk</title>
+    <link rel="shortcut icon" href="C:/Users/dell/Pictures/images/Icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <div class="headerfix">
+    <div class="header">
+        <div class="headerLink1">
+             <ul>
+                <li>SAVE MORE ON APP</li>
+              </ul>
+        </div>
+        <div class="headerLink2">
+            <ul>
+               <li>DARAZ AFFILIATE PROGRAM</li>
+             </ul>
+       </div>
+       <div class="headerLink3">
+        <ul>
+           <li>SELL ON DARAZ</li>
+         </ul>
+   </div>
+       <div class="headerLink4">
+        <ul>
+           <li>CUSTOMER CARE</li>
+         </ul>
+   </div>
+   <div class="headerLink5">
+            <ul>
+               <li>TRACK MY ORDER</li>
+             </ul>
+       </div>
+    </div>
+    <div class="headerLink6">
+        <ul>
+           <li>LOGIN</li>
+         </ul>
+   </div>
+   <div class="headerLink7">
+    <ul>
+       <li>SIGNUP</li>
+     </ul>
+</div>  <br>
+<div class="logoSer">
+    <div class="logo">
+        <img src="C:/Users/dell/Pictures/images/Daraz_Logo.jpg" alt="Daraz_Logo" width="140" >
+    </div>
+    <div class="search">
+        <div class="searchtxt">
+            Search in Daraz
+        </div>
+        <div class="searchimg">
+            <img src="C:/Users/dell/Pictures/images/magnifier.jpg" alt="magnifier">
+        </div>
+    </div>
+    <div class="cart">
+        <img src="C:/Users/dell/Pictures/images/cart.jpg" alt="cart">
+    </div>
+    <div class="downloaddaraz">
+        <img src="C:/Users/dell/Pictures/images/downloadDarazapp.jpg" alt="downloadDarazapp">
+    </div>
+</div>
+</div>
+
+<div class="imgslider">
+    <img src="C:/Users/dell/Pictures/images/imageslider.jpg" alt="imageslider">
+</div>
+<div class="body1">
+    <div class="bimg1">
+        <div class="bimg1txt">DarazMall</div></div>
+    <div class="bimg2">
+        <div class="bimg2txt">dMart</div></div>
+    </div>
+    <div class="bimg3">
+        <div class="bimg3txt">Fashion & Lifestyle</div></div>
+    </div>
+    <div class="bimg4">
+        <div class="bimg4txt">Global Collection</div></div>
+    </div>
+    <div class="bimg5">
+        <div class="bimg5txt">Digital Sahulat</div></div>
+    </div>
+</div>
+<div class="flashsale">Flash Sale</div>
+<div class="sale">
+    <div class="onsale">On Sale Now</div>
+    <div class="endingin">Ending in</div>
+    <div class="timerimg">
+        <img src="C:/Users/dell/Pictures/images/timer.jpg" alt="timerimg">
+    </div>
+    <div class="btnborder">
+        <p class="solid">SHOP MORE</p>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+</div>
+<div class="onsale">
+    <div class="onsale1">
+        <img src="C:/Users/dell/Pictures/images/onsale1.jpg" alt="onsale1">
+    </div>
+    <div class="onsale2">
+        <img src="C:/Users/dell/Pictures/images/onsale2.jpg" alt="onsale2">
+    </div>
+    <div class="onsale3">
+        <img src="C:/Users/dell/Pictures/images/onsale3.jpg" alt="onsale3">
+    </div>
+    <div class="onsale4">
+        <img src="C:/Users/dell/Pictures/images/onsale4.jpg" alt="onsale4">
+    </div>
+    <div class="onsale5">
+        <img src="C:/Users/dell/Pictures/images/onsale5.jpg" alt="onsale5">
+    </div>
+    <div class="onsale6">
+        <img src="C:/Users/dell/Pictures/images/onsale6.jpg" alt="onsale6">
+    </div>
+</div>
+<div class="collection">Collections</div>
+<div class="shopmore">SHOP MORE
+    <div class="shopmore1">></div>
+</div>
+<div class="collectionimg">
+    <div class="collectionimg1">
+        <img src="C:/Users/dell/Pictures/images/collection1.jpg" alt="collection1">
+    </div>
+    <div class="collectionimg2">
+        <img src="C:/Users/dell/Pictures/images/Images/collection2.jpg" alt="collection2">
+    </div>
+    <div class="collectionimg3">
+        <img src="C:/Users/dell/Pictures/images/collection3.jpg" alt="collection3">
+    </div>
+    <div class="collectionimg4">
+        <img src="C:/Users/dell/Pictures/images/collection4.jpg" alt="collection4">
+    </div>
+    <div class="collectionimg5">
+        <img src="C:/Users/dell/Pictures/images/collection5.jpg" alt="collection5">
+    </div>
+    <div class="collectionimg6">
+        <img src="C:/Users/dell/Pictures/images/collection6.jpg" alt="collection6">
+    </div>
+    <div class="collectionimg7">
+        <img src="C:/Users/dell/Pictures/images/collection7.jpg" alt="collection7">
+    </div>
+    <div class="collectionimg8">
+        <img src="C:/Users/dell/Pictures/images/collection8.jpg" alt="collection8">
+    </div>
+</div>
+</body>
+</html>
