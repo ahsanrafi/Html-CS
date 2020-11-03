@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+    
+    var data=[
+    
+mobile1 ={company_name:"samsung" , name:"galaxy s6", price :15999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile2 ={company_name:"samsung" , name:"galaxy s7", price :26999,Weight:"N/A  ",Chipset:"Snapdragon 450 SoC  )",GPU:"Adreno 506   ",CPU:"1.8 Ghz Octa Core   " },
+mobile3 ={company_name:"samsung" , name:"galaxy s8", price :99999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile4 ={company_name:"samsung" , name:"galaxy s9", price :56999,Weight:"N/A  ",Chipset:"	Exynos 9611 (10nm)  ",GPU:"Mali-G72 MP3    ",CPU:"Octa-core (4 x 2.3 GHz Cortex-A73 + 4 x 1.7 GHz Cortex-A53)    " },
+mobile5 ={company_name:"samsung" , name:"galaxy s10", price :15999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile6 ={company_name:"samsung" , name:"galaxy s11", price :26999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile7 ={company_name:"samsung" , name:"galaxy note5", price :99999,Weight:"190 g",Chipset:"	Exynos 9611 (10nm)  ",GPU:"Mali-G77 MP11  ",CPU:"1.8 Ghz Octa Core  " },
+mobile8 ={company_name:"samsung" , name:"galaxy note6", price :56999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G72 MP3    ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile9 ={company_name:"samsung" , name:"galaxy note7", price :15999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile10 ={company_name:"samsung" , name:"galaxy note8", price :26999,Weight:"190 g",Chipset:"	Exynos 9611 (10nm)  ",GPU:"Mali-G72 MP3    ",CPU:"1.8 Ghz Octa Core   " },
+mobile11 ={company_name:"samsung" , name:"galaxy note9", price :99999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile12 ={company_name:"samsung" , name:"galaxy note10", price :56999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile13 ={company_name:"samsung" , name:"galaxy A30", price :15999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"1.8 Ghz Octa Core   " },
+mobile14 ={company_name:"samsung" , name:"galaxy A40", price :26999,Weight:"190 g",Chipset:"Exynos 9611 (10nm)  ",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile15 ={company_name:"samsung" , name:"galaxy A50", price :99999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G72 MP3    ",CPU:"1.8 Ghz Octa Core   " },
+mobile16 ={company_name:"samsung" , name:"galaxy A60", price :56999,Weight:"190 g",Chipset:"	Exynos 9611 (10nm)  ",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile17 ={company_name:"samsung" , name:"galaxy A70", price :15999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile18 ={company_name:"samsung" , name:"galaxy A71", price :26999,Weight:"190 g",Chipset:"Qualcomm Snapdragon  ",GPU:"Mali-G77 MP11  ",CPU:"2.2 Ghz Octa Core   " },
+mobile19 ={company_name:"samsung" , name:"galaxy M20", price :99999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile20 ={company_name:"samsung" , name:"galaxy M20s", price :56999,Weight:"190 g",Chipset:"	Exynos 9611 (10nm)  ",GPU:"Mali-G77 MP11  ",CPU:"1.8 Ghz Octa Core   " },
+mobile21 ={company_name:"samsung" , name:"galaxy A30", price :15999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile22 ={company_name:"samsung" , name:"galaxy A30s", price :26999,Weight:"190 g",Chipset:"	Exynos 9611 (10nm)  ",GPU:"Mali-G77 MP11  ",CPU:"1.8 Ghz Octa Core   " },
+mobile23 ={company_name:"samsung" , name:"galaxy J6", price :99999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"Octa-core (2 x 2.73 GHz Mongoose M5 + 2 x 2.50 GHz Cortex-A76 + 4 x 2.0 GHz Cortex-A55)  " },
+mobile24 ={company_name:"samsung" , name:"galaxy J7", price :56999,Weight:"190 g",Chipset:"Exynos 990 (7 nm+)",GPU:"Mali-G77 MP11  ",CPU:"1.8 Ghz Octa Core   " },
+];
+
+
+/*document.write(mobile1.name+''+mobile1.price);
+document.writeln("<br>")
+document.write(mobile2.name+''+mobile2.price);
+document.writeln("<br>")
+document.write(mobile3.name+''+mobile3.price);
+document.writeln("<br>")
+document.write(mobile4.name+''+mobile4.price);
+document.writeln("<br>")
+
+var ul=document.querySelector('tr');
+
+ul.innerHTML+="<td>"+ mobile[0].name+mobile[0].price+"</td>";
+ul.innerHTML+="<td>"+ mobile[1].name+"</td>";
+ul.innerHTML+="<td>"+ mobile[2].name+"</td>";
+ul.innerHTML+="<td>"+ mobile[3].name+"</td>";
+*/
+
+
+
+var keys = [];
+
+document.write("<table border==\"1\"><tr>");
+for (key in data[0]) {
+	document.write('<td>' + key + '</td>');
+}
+document.write("</tr>");
+for (var i = 0; i < data.length; i++) {
+	document.write('<tr>');
+	for (key in data[i]) {
+  	document.write('<td>' + data[i][key] + '</td>');
+  }
+	document.write('</tr>');
+}
+document.write("</table>");
+    
+    </script>
+</body>
+</html>
