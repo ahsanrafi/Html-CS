@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="E:/jquery topic 3-11-2020/jquery/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+// 1
+    //  $('h1').html("ali");
+// 2
+        // $('button').click(function(){
+            // $('h1').html("ali");
+        // });
+// 3
+        // $('button').click(function(){
+        //  $('h1').hide();
+        //  });
+//4 
+        // $('button').click(function(){
+        //   $('h1').show();
+        //   });
+   //5 
+        //  $('button').click(function(){
+        //    $('h1').show(3000);
+        //    });
+// // 6
+//         $('button').click(function(){
+//            $('h1').toggle(3000);
+//            });
+
+// 7
+            // $('button').click(function(){
+            //      $('h1').slideToggle(3000);
+            // });
+
+                    $('button').click(function(){
+         $("div").animate ({left:'250px'}).animate ({top:'250px'}) .animate ({left:'0px'}).animate ({top:'0px'})
+          
+        
+         });
+
+   });
+
+  
+    </script>
+    <!-- <h1>MAaz lullo</h1>
+    <h1 style="display: none;">ahsan </h1> -->
+
+    <button>nikal loray</button>
+
+    <div style="background-color: coral; height: 150px; width: 150px; position: absolute;"></div>
+</body>
+</html>
