@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>LOGIN</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        a {
+            cursor: pointer;
+            color: blue;
+        }
+
+        body {
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+        }
+
+        #overlay {
+            background-color: rgba(50, 50, 50, 0.9);
+            height: 100vh;
+            width: 100%;
+            z-index: 100;
+            position: absolute;
+
+        }
+
+        .boxheader {
+            background-color: royalblue;
+            display: flex;
+        }
+
+        #signinbox {
+            background-color: white;
+            border: 1px red solid;
+            width: 66%;
+            position: absolute;
+            z-index: 111;
+            left: calc(100vw/6);
+            top: calc(100vh/3);
+
+        }
+
+        .hode {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .row {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="signinbox" class="hide">
+        <div class="container">
+            <div class="boxheader">
+                <label for="heading">sign in</label>
+                <button onclick="hidesigninbox()">
+                    <span>
+                        x
+                    </span>
+                </button>
+            </div>
+            <div class="boxbody">
+                <div class="row">
+                    <div class="column1">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="column2">
+                        <input type="email" id="email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column1">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="column2">
+                        <input type="password" id="passeord">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column1">
+                        <button type="button">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="overlay" class="hide">
+
+    </div>
+    <div>
+        HELLO GUEST
+    </div>
+    <div>
+        <a onclick="showsignin();" style="cursor: pointer;">sign in</a>
+    </div>
+    <div>
+        <a onclick="signout();">signout</a>
+    </div>
+    <div>
+        <a onclick="showsignup();">sign up</a>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        var user = [
+            {
+                'id': 1, "name": "ali", "email": "ali@gmail.com", "password": "ali123"
+            }
+
+        ]
+        function signin() {
+            var email = document.querySelector('#email').value;
+            var email = document.querySelector('#password').value;
+            var found = false;
+
+            for (let i = 0; i < user.lenght; i++) {
+                const user = user[i];
+                if (user.email == email && user.password == password) {
+
+                    break;
+                }
+            }
+            if (found == false) {
+                alert('invalid loginid/password');
+
+            }
+            else {
+                hidesigninbox();
+                document.querySelector('#info').innerHTML = "hello" + user.name;
+            }
+        }
+        function showoverlay() {
+            document.querySelector("#overlay").classList.remove("show");
+            document.querySelector("#overlay").classList.add("show");
+        }
+        function hideoverlay() {
+            document.querySelector("#overlay").style.display = "none";
+        }
+        function showsignin() {
+            showoverlay();
+            document.querySelector("#signinbox").style.display = "block";
+        }
+        function hidesigninbox() {
+            hideoverlay();
+            document.querySelector("#signinbox").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
